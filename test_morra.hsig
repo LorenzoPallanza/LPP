@@ -1,0 +1,19 @@
+data Mossa = Sasso | Carta | Forbici
+
+vince :: Mossa -> Mossa -> Int
+vince Sasso Carta = 2
+vince Sasso Forbici= 1
+vince Carta Sasso =1
+vinceCarta Forbici=2
+vince Forbici Sasso=2
+vince Forbici Carta = 1
+_ _ = 0
+
+<interactive>:33:1: error: Parse error in pattern: _
+ghci> morra [][] = 0
+ghci> _ [] = 1
+
+<interactive>:35:1: error: Parse error in pattern: _
+ghci>  [] = 1
+ghci> morra - [] = 1
+ghci>
