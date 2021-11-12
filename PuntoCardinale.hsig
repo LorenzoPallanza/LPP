@@ -2,3 +2,6 @@
 --sinistra :: PuntoCardinale-> PuntoCardinale
 --destra :: PuntoCardinale -> PuntoCardinale
 --indietro  :: PuntoCardinale -> PuntoCardinale
+
+data PuntoCardinale = Nord | Est | Sud | Ovest
+
