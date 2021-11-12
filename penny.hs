@@ -31,3 +31,21 @@ f6 = f4 + f5
 f7 :: Int
 f7 = f5 + f6
 
+
+successore :: Int -> Int
+successore x = x + 1
+
+precursore :: Int -> Int
+precursore x = x - 1
+
+
+pari :: Int -> Bool
+pari n = n `mod` 2 == 0
+
+dispari :: Int -> Bool
+dispari = not . pari
+
+--somma i primi n numeri primi naturali positivi.
+
+somma :: Int -> Int
+somma n = (n * (n + 1) `div` 2)
